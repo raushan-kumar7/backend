@@ -1,0 +1,36 @@
+*******  Backend Development    *******
+
+# 2 Major Components
+  * A programming language
+    - Java, JavaScript, PHP, golang, c++ (on a framework)
+  * A database
+    - Mongo, MySQL, Postgress, SQLite (ORM, ODM)
+  * A JavaScript based Backend
+    Data      File    Third Party (API)
+    - A JS Runtime: NodeJs/Deno/Ban 
+      package.json      .env    (Readme, git, lint, prettier etc)
+    - src
+      index(DB concepts)    APP (config cookie urlencode)     constants(enum, DB-name)
+      -> DB
+      -> Models
+      -> Controllers
+      -> Routers
+      -> Middlewares
+      -> Utils
+      -> More (depends)
+
+# Backend Depoly Website
+  1. digitalocen
+  2. heroku
+  3. railway
+  4. seenode
+  5. render
+  6. cyclic.sh
+
+# For Online Editor
+  1. CodeSandbox: https://codesandbox.io/
+  2. GitHub CodeSpaces: https://github.com/codespaces
+  3. StackBlitz: https://stackblitz.com/
+
+  Model Link: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbld1cS1aMjdMQkRYQXdKeW90Yk1ON1FhXzJid3xBQ3Jtc0trWmZ5QUI2UTZUSmVyOXhTYWhUcVpKTFp2UUFhcXRHVlZCbU5id2IyazA5UGFOMWdoSzB0MWhpcVVQeXJPNWU4UWNGbmt5UnZNVTZmN1RwUjZ0LTZ1STdKbWNXZFh1R20zTGZXRzJQcXNLRDdzRThuaw&q=https%3A%2F%2Fapp.eraser.io%2Fworkspace%2FYtPqZ1VogxGy1jzIDkzj%3Forigin%3Dshare&v=9B4CvtzXRpc
+  

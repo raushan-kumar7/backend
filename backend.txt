@@ -34,3 +34,63 @@
 
   Model Link: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbld1cS1aMjdMQkRYQXdKeW90Yk1ON1FhXzJid3xBQ3Jtc0trWmZ5QUI2UTZUSmVyOXhTYWhUcVpKTFp2UUFhcXRHVlZCbU5id2IyazA5UGFOMWdoSzB0MWhpcVVQeXJPNWU4UWNGbmt5UnZNVTZmN1RwUjZ0LTZ1STdKbWNXZFh1R20zTGZXRzJQcXNLRDdzRThuaw&q=https%3A%2F%2Fapp.eraser.io%2Fworkspace%2FYtPqZ1VogxGy1jzIDkzj%3Forigin%3Dshare&v=9B4CvtzXRpc
   
+
+# HTTP - Hyper Text Transfer Protocol
+  * What are HTTP headers
+    - metadata -> key-value sent along with request & response
+    -> Caching, authentication, manage state
+      x-prefix -> 2012 (X-deprecated)
+      - Request Headers -> from client
+      - Response Headers -> from server
+      - Represenation Headers -> encoding / compression
+      - Payload Headers -> data
+  
+  * Most common Headers
+    - Accept: application/json
+    - User-Agent
+    - Authorization
+    - Content-Type
+    - Cookie 
+    - Cache-Control
+  
+  * CORS
+    - Access-Control-Allow-Origin
+    - Access-Control-Allow-Credentials
+    - Access-Control-Allow-Method
+  
+  * Security
+    - Cross-Origin-Embeddes-Policy
+    - Cross-Origin-Opener-Policy
+    - Content-Security-Policy
+    - x-XCS-Protection
+
+  * HTTP Methods
+    - Basic set of operations that can be used to internet with server
+      -> GET  : retrieve a response
+      -> HEAD : no message body (response headers only)
+      -> OPTIONS : what operations are available
+      -> TRACE   : loopback test (get same data)
+      -> DELETE  : remove a resource
+      -> PUT     : replace a resource
+      -> POST    : interact with resource (mostly add)
+      -> PATCH   : change part of a resource
+  
+  * HTTP Status Code 
+    - 1xx   : Information
+    - 2xx   : Success
+    - 3xx   : Redirection
+    - 4xx   : Client Error
+    - 5xx   : Server Error
+    100 Continue
+    102 Processing
+    200 ok
+    201 created
+    202 accepted
+    307 temporary redirect
+    308 permanet redirect
+    400 Bad Request
+    401 Unauthorized
+    402 Payment Required
+    404 Not Found
+    500 Internal Server Error
+    504 Gate way time out

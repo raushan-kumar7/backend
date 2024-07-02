@@ -214,7 +214,6 @@ const logoutUser = asyncHandler(async (req, res) => {
     .json(new ApiResponse(200, {}, "User logged Out"));
 });
 
-
 const refreshAccessToken = asyncHandler(async (req, res) => {
   const incomingRefreshToken =
     req.cookies.refreshToken || req.body.refreshToken;
@@ -373,13 +372,14 @@ const updateUserCoverImage = asyncHandler(async (req, res) => {
     .json(new ApiResponse(200, user, "Cover image updated successfully"));
 });
 
+// get user channel profile
 const getUserChannelProfile = asyncHandler(async (req, res) => {
   const { username } = req.params;
 
   if (!username?.trim()) {
     throw new ApiError(400, "username is missing");
   }
-
+  
   const channel = await User.aggregate([
     {
       $match: {
@@ -432,7 +432,9 @@ const getUserChannelProfile = asyncHandler(async (req, res) => {
       },
     },
   ]);
+  
 
+ 
   if (!channel?.length) {
     throw new ApiError(404, "channel does not exists");
   }
@@ -444,6 +446,8 @@ const getUserChannelProfile = asyncHandler(async (req, res) => {
     );
 });
 
+/* The above code is a JavaScript function that retrieves the watch history of a user. Here's a
+breakdown of what the code is doing: */
 const getWatchHistory = asyncHandler(async (req, res) => {
   const user = await User.aggregate([
     {
